@@ -1,5 +1,5 @@
 window.cipher = {
-  encriptacionCesar : () => {
+  decode : () => {
     var clave = 3
     var textoOriginal = document.getElementById("textoOriginal").value;
     var textoEncriptado = "";

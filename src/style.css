@@ -2,17 +2,12 @@ h1{
 
 }
 body{
-  background: url(imagenes/fondo2.jpg);
+  background: url(imagenes/fondo.jpg);
 }
-#div{
 
-  background: #46147f;
-  text-align: right;
-  border-radius: 20px;
-}
 #titulo{
   font-size: 60px;
-  color:#53db2e;
+  color:black;
   text-align: center;
 }
 #mensaje{
