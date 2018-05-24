@@ -1,0 +1,25 @@
+h1{
+
+}
+body{
+  background: url(imagenes/fondo2.jpg);
+}
+#div{
+
+  background: #46147f;
+  text-align: right;
+  border-radius: 20px;
+}
+#titulo{
+  font-size: 60px;
+  color:#53db2e;
+  text-align: center;
+}
+#mensaje{
+   color: yellow;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+
+
+}
