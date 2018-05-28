@@ -4,31 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"/>
+
     <title>Caesar Cipher</title>
   </head>
   <body>
-
-    <link rel="stylesheet" href="style.css"/>
-<div id="div">
-  <h1 id="titulo">"Juro Solemnemente que mis intenciones no son buenas"</h1>
-</div>
+    <header>
+      <div class="container-fluid">
+        <h1 id="titulo">"Juro Solemnemente que mis intenciones no son buenas"</h1>
+      </div>
+    </header>
 <p id='mensaje' >-----Encriptacion De Mensajes-----</p>
-<div id="encriptado">
-<p> Clave : <input type = "text" id = "candado" ></input></p>
+<div class="container">
+    <p> Clave : <input type = "text" id = "candado" size="10"></input></p>
+  <p class="col-xs-12 col-sm-4">Mensaje Original :
+    <input type = "text" id = "textoOriginal" placeholder='Escribe tu Mensaje '></input></p>
 
-<p>Mensaje Original :
-<input type = "text" id = "textoOriginal" placeholder='Escribe tu Mensaje '></input>
-<button class='btn btn-primary' id='encode'>Encriptar</button>  </p>
-
-  <p>Mensaje Encriptado :
-<input type = "text" id = "solucion" placeholder= 'Escribe el Mensaje a Desencriptar'></input>
-<button id='decode'>Desencriptar</button></p>
-
-       <p>Mensaje Desencriptado :
-<input type = "text" id = "textoDesencriptado" placeholder= 'Mensaje Desencriptado'></input>
-</p>
+  <p class="col-xs-12 col-sm-4">Mensaje Encriptado :
+    <input type = "text" id = "solucion" placeholder= 'Escribe el Mensaje a Desencriptar'></input></p>
+  <p class="col-xs-12 col-sm-4 ">Mensaje Desencriptado :
+    <input type = "text" id = "textoDesencriptado" placeholder= 'Mensaje Desencriptado'></input></p>
     </div>
+    <div class='row'>
+      <p class="col-xs-12 col-sm-6"><button class='btn-primary' id='encode'>Encriptar</button></p>
+
+      <p class="col-xs-12 col-sm-6"><button class='btn-primary' id='decode'>Desencriptar</button></p>
+</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min"></script>
+
   </body>
 </html>

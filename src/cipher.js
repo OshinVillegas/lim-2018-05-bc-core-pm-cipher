@@ -35,11 +35,11 @@ window.cipher = {
       let newPosLetra = 0;
       if (Posletra >= 65 && Posletra <= 90)
       {
-        newPosLetra = (Posletra - 65 - llave) % 26 + 65;
+        newPosLetra = (Posletra + 65 - llave) % 26 + 65;
       }
       else if (Posletra >= 97 && Posletra <= 122)
       {
-        newPosLetra = (Posletra - 97 - llave) % 26 + 97;
+        newPosLetra = (Posletra + 85 - llave) % 26 + 97;
       }
       else
       {
@@ -62,11 +62,11 @@ window.cipher = {
       let newPosLetra = 0;
       if (Posletra >= 65 && Posletra <= 90)
       {
-        newPosLetra = (Posletra - 65 - llave) % 26 + 65;
+        newPosLetra = (Posletra + 65 - llave) % 26 + 65;
       }
       else if (Posletra >= 97 && Posletra <= 122)
       {
-        newPosLetra = (Posletra - 97 - llave) % 26 + 97;
+        newPosLetra = (Posletra + 85 - llave) % 26 + 97;
       }
       else
       {
@@ -81,3 +81,4 @@ window.cipher = {
   }
 
 };
+0

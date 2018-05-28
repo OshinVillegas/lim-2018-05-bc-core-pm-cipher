@@ -1,11 +1,17 @@
 h1{
 
 }
-body{
+body
+{
   background: url(imagenes/fondo.jpg);
 }
 
-#titulo{
+#candado
+{
+  border: 500px;
+}
+#titulo
+{
   font-size: 60px;
   color:black;
   text-align: center;
@@ -18,4 +24,6 @@ body{
 }
 #encode {
   font-family: fantasy;
+  margin-left: 200px;
+
 }
