@@ -26,12 +26,12 @@ window.cipher = {
   },
   decode:() => {
     var llave = parseInt(document.getElementById('candado').value);
-    var solucion = document.getElementById("solucion").value ;
+    var textoOriginal = document.getElementById("textoOriginal").value;
     var desencriptado = "";
 
-    for (var i=0; i<solucion.length; i++)
+    for (var i=0; i<textoOriginal.length; i++)
     {
-      let Posletra = solucion.charCodeAt(i);
+      let Posletra = textoOriginal.charCodeAt(i);
       let newPosLetra = 0;
       if (Posletra >= 65 && Posletra <= 90)
       {
@@ -48,37 +48,14 @@ window.cipher = {
 
       desencriptado += String.fromCharCode(newPosLetra);
     }
-    document.getElementById("textoDesencriptado").value;
+    document.getElementById("solucion").value;
     return desencriptado;
   },
-  createCipherWithOffset : () =>{
-    var llave = parseInt(document.getElementById('candado').value);
-    var solucion = document.getElementById("solucion").value ;
-    var desencriptado = "";
+  createCipherWithOffset: (offset, string) =>{
 
-    for (var i=0; i<solucion.length; i++)
-    {
-      let Posletra = solucion.charCodeAt(i);
-      let newPosLetra = 0;
-      if (Posletra >= 65 && Posletra <= 90)
-      {
-        newPosLetra = (Posletra + 65 - llave) % 26 + 65;
-      }
-      else if (Posletra >= 97 && Posletra <= 122)
-      {
-        newPosLetra = (Posletra + 85 - llave) % 26 + 97;
-      }
-      else
-      {
-        newPosLetra = Posletra;
-      }
+    return encode;
 
-      desencriptado += String.fromCharCode(newPosLetra);
-    }
-    document.getElementById("textoDesencriptado").value;
-    return desencriptado;
+    return decode;
 
   }
-
 };
-0

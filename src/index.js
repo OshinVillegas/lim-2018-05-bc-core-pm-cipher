@@ -9,12 +9,5 @@ document.getElementById("decode").addEventListener("click", decodificacion);
 function decodificacion()
 {
   var desencriptado = cipher.decode();
-  document.getElementById("textoDesencriptado").value = desencriptado;
-}
-
-document.getElementById("decode").addEventListener("click", decodificacion);
-function decodificacion()
-{
-  var desencriptado = cipher.createCipherWithOffset();
-  document.getElementById("textoDesencriptado").value = desencriptado;
+  document.getElementById("solucion").value = desencriptado;
 }
