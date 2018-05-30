@@ -4,25 +4,30 @@ body
 }
 #titulo
 {
-  font-family: courier;
+  font-family: Harry Potter;
   font-size: 60px;
   color:black;
   text-align: center;
 }
 #mensaje
 {
+  font-family: Harry Potter;
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  text-decoration: underline;
 }
 #candado
 {
+  font-family: Harry Potter;
   width:70px;height:30px;
   font-size: 19px;
   margin-right: 210px;
 }
-
+#clave
+{
+font-family: Harry Potter;
+font-size: 20px;
+}
 #textoOriginal
 {
   max-width:500px;
@@ -41,12 +46,19 @@ body
 }
 #encode
 {
+  font-family: Harry Potter;
   margin-right:103px;
   margin-left: 350px;
+  font-size: 25px;
 }
 #decode
 {
+  font-family: Harry Potter;
   margin-right: 180px;
   margin-left: -100px;
-
+  font-size: 25px;
+}
+@font-face {
+  font-family: Harry Potter;
+  src: url(../fuentes/harrypotter.TTF);
 }
