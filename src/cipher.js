@@ -56,6 +56,5 @@ window.cipher = {
     return encode;
 
     return decode;
-
   }
 };

@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css"/>
-
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
     <title>Caesar Cipher</title>
   </head>
   <body>
+
     <header>
       <div class="container-fluid">
         <h1 id="titulo">"Juro Solemnemente que mis intenciones no son buenas"</h1>
       </div>
     </header>
-<p id='mensaje' >-----Encriptacion De Mensajes-----</p>
-<div class="container">
-    <p> Clave : <input type = "text" id = "candado" size="10"></input></p>
-  <p class="col-xs-12 col-sm-6">Mensaje Original :
-    <input type = "text" id = "textoOriginal" placeholder='Escribe tu Mensaje '></input></p>
 
-  <p class="col-xs-12 col-sm-6">Mensaje Encriptado/Desencriptado:
-    <input type = "text" id = "solucion" placeholder= 'Escribe el Mensaje a Desencriptar'></input></p>
-    <div class='row'>
-      <p class="col-xs-12 col-sm-6"><button class='btn-primary' id='encode'>Encriptar</button></p>
+    <p id='mensaje' >-----Encriptador/Desencriptador De Mensajes-----</p>
+    <p align="right"><strong>CLAVE:</strong><input type = "text" id = "candado" ></input>
+    <button class='btn btn-primary' id='encode'> Encriptar </button><button class='btn btn-danger' id='decode'>Desencriptar</button></p>
 
-      <p class="col-xs-12 col-sm-6"><button class='btn-primary' id='decode'>Desencriptar</button></p>
-</div>
+    <div class="container">
+
+      <p class="col-xs-12 col-sm-6">
+        <textarea id = "textoOriginal" placeholder='Escribe tu Mensaje 'rows="8" cols="80"></textarea>
+      </p>
+      <p class="col-xs-12 col-sm-6">
+        <textarea id = "solucion" rows="8" cols="80"></textarea>
+      </p>
+    </div>
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     <script src="bootstrap/js/bootstrap.min"></script>
