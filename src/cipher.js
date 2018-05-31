@@ -1,7 +1,5 @@
 window.cipher = {
-  encode : () => {
-    var llave = parseInt(document.getElementById('candado').value);
-    var textoOriginal = document.getElementById("textoOriginal").value;
+  encode : (llave, textoOriginal) => {
     var textoEncriptado = "";
 
     for (var i=0; i<textoOriginal.length; i++)
@@ -20,13 +18,11 @@ window.cipher = {
       {
         newPosLetra = Posletra;
       }
-  		textoEncriptado += String.fromCharCode(newPosLetra);
+  textoEncriptado += String.fromCharCode(newPosLetra);
     }
     return textoEncriptado;
   },
-  decode:() => {
-    var llave = parseInt(document.getElementById('candado').value);
-    var textoOriginal = document.getElementById("textoOriginal").value;
+  decode:(llave, textoOriginal) => {
     var desencriptado = "";
 
     for (var i=0; i<textoOriginal.length; i++)
@@ -48,13 +44,25 @@ window.cipher = {
 
       desencriptado += String.fromCharCode(newPosLetra);
     }
-    document.getElementById("solucion").value;
+
     return desencriptado;
   },
-  createCipherWithOffset: (offset, string) =>{
-
-    return encode;
-
-    return decode;
+  //Funcion createCipherWithOffset que recibe offset Llave y retorna un objeto con las funciones encode y decode
+  createCipherWithOffset: (llave)=>{
+    var objeto = {
+      // Funcion encode que recibe string texto original y retorna el texto encriptado
+      encode(textoOriginal){
+        let encriptado = "";
+        encriptado = cipher.encode(llave,textoOriginal);
+        return encriptado;
+      },
+      // Funcion encode que recibe string texto original y retorna el texto desencriptado
+      decode(textoOriginal){
+        let desencriptado = "";
+        desencriptado = cipher.decode(llave,textoOriginal);
+        return desencriptado;
+      }
+    }
+    return objeto; //Devuelve el objeto
   }
 };
