@@ -10,14 +10,11 @@ window.cipher = {
       {
         newPosLetra = (Posletra - 65 + llave) % 26 + 65;
       }
-      else if (Posletra >= 97 && Posletra <= 122)
+      if (Posletra >= 97 && Posletra <= 122)
       {
         newPosLetra = (Posletra - 97 + llave) % 26 + 97;
       }
-      else
-      {
-        newPosLetra = Posletra;
-      }
+      
   textoEncriptado += String.fromCharCode(newPosLetra);
     }
     return textoEncriptado;
@@ -33,15 +30,12 @@ window.cipher = {
       {
         newPosLetra = (Posletra + 65 - llave) % 26 + 65;
       }
-      else if (Posletra >= 97 && Posletra <= 122)
+      if (Posletra >= 97 && Posletra <= 122)
+      
       {
         newPosLetra = (Posletra + 85 - llave) % 26 + 97;
       }
-      else
-      {
-        newPosLetra = Posletra;
-      }
-
+      
       desencriptado += String.fromCharCode(newPosLetra);
     }
 

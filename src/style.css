@@ -21,7 +21,7 @@ body
   font-family: Harry Potter;
   width:70px;height:30px;
   font-size: 19px;
-  margin-right: 210px;
+  margin-right: 190px;
 }
 #clave
 {
@@ -38,6 +38,7 @@ font-size: 20px;
 }
 #solucion
 {
+  background:#dbd4d4;
   max-width:500px;
   min-width:500px;
   max-height:200px;
@@ -45,11 +46,12 @@ font-size: 20px;
   font-size: 20px;
 }
 #encode
-{
+{  
   font-family: Harry Potter;
   margin-right:103px;
   margin-left: 350px;
   font-size: 25px;
+  color:white;
 }
 #decode
 {
