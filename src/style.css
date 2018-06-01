@@ -9,6 +9,10 @@ body
   color:black;
   text-align: center;
 }
+#cuerpo
+{
+padding-top: 60px;
+}
 #mensaje
 {
   font-family: Harry Potter;
