@@ -16,9 +16,9 @@ padding-top: 60px;
 #mensaje
 {
   font-family: Harry Potter;
-  color: black;
   font-size: 30px;
   text-align: center;
+  margin-top: -100px;
 }
 #candado
 {
@@ -63,6 +63,11 @@ font-size: 20px;
   margin-right: 180px;
   margin-left: -100px;
   font-size: 25px;
+}
+#ayuda
+{
+margin-left: 1250px;
+margin-top: 90px;
 }
 @font-face {
   font-family: Harry Potter;
