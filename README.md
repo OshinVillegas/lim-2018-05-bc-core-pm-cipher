@@ -19,7 +19,8 @@ Debe ser capaz de cifrar y descifrar tanto letras mayúsculas como minúsculas. 
  
  3. Si queremos encriptar hacemos click en el Boton ENCRIPTAR y el resultado se imprimirá en la la caja de color mas oscuro.
  
- 4.Si queremos desencriptar hacemos click en el Boton DESENCRIPTAR y el resultado se imprimirá en la la caja de color mas oscuro.
+ 4. Si queremos desencriptar hacemos click en el Boton DESENCRIPTAR y el resultado se imprimirá en la la caja de color mas oscuro.
+ 
  
 
 ## Usuarios
