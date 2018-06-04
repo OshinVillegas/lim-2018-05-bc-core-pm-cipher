@@ -1,31 +1,36 @@
 window.cipher = {
+  //Funcion encode que recibe offset Llave y string textoOriginal y retorna el texto encriptado
   encode : (llave, textoOriginal) => {
-    var textoEncriptado = "";
+    let textoEncriptado = "";
 
-    for (var i=0; i<textoOriginal.length; i++)
+    //Recorre letra a letra el texto original 
+    for (let i=0; i<textoOriginal.length; i++)
     {
+      //Obtener el codigo ASCII de la letra original
       let Posletra = textoOriginal.charCodeAt(i);
-      let newPosLetra = 0;
-      if (Posletra >= 65 && Posletra <= 90)
+      let newPosLetra = Posletra;
+      
+      if (Posletra >= 65 && Posletra <= 90)  //Si es letra mayuscula
       {
         newPosLetra = (Posletra - 65 + llave) % 26 + 65;
       }
-      if (Posletra >= 97 && Posletra <= 122)
+      if (Posletra >= 97 && Posletra <= 122) //Si es letra minuscula
       {
         newPosLetra = (Posletra - 97 + llave) % 26 + 97;
       }
-      
-  textoEncriptado += String.fromCharCode(newPosLetra);
+      //Agrega la letra encriptada
+      textoEncriptado += String.fromCharCode(newPosLetra);
     }
     return textoEncriptado;
   },
+  //Funcion decode que recibe offset Llave y string textoOriginal y retorna el texto desencriptado
   decode:(llave, textoOriginal) => {
-    var desencriptado = "";
+    let desencriptado = "";
 
-    for (var i=0; i<textoOriginal.length; i++)
+    for (let i=0; i<textoOriginal.length; i++)
     {
       let Posletra = textoOriginal.charCodeAt(i);
-      let newPosLetra = 0;
+      let newPosLetra = Posletra;
       if (Posletra >= 65 && Posletra <= 90)
       {
         newPosLetra = (Posletra + 65 - llave) % 26 + 65;
@@ -43,7 +48,7 @@ window.cipher = {
   },
   //Funcion createCipherWithOffset que recibe offset Llave y retorna un objeto con las funciones encode y decode
   createCipherWithOffset: (llave)=>{
-    var objeto = {
+    let objeto = {
       // Funcion encode que recibe string texto original y retorna el texto encriptado
       encode(textoOriginal){
         let encriptado = "";

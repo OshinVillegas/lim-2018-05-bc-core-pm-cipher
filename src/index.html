@@ -9,15 +9,19 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid">
-        <h1 id="titulo">"Juro Solemnemente que mis intenciones no son buenas"</h1>
-      </div>
-    </header>
-    <div id= "cuerpo" >
-      <p align="right" id = "clave">CLAVE:<input type = "text" id = "candado" >
-      <button class="btn btn-primary" id="encode"> Encriptar </button><button class="btn btn-primary" id="decode">Desencriptar</button></p>
 
-      <div class="container">
+      <div class="container-fluid">
+        <h1 id="titulo">"Juro Solemnemente que mis intenciones para este cumple no son buenas"</h1>
+      </div>
+
+    </header>
+
+    <div class = "col-xs-12" id= "cuerpo" >
+      <p align="right" id = "clave"  >CLAVE:<input type = "text" id = "candado" >
+      <button class="btn btn-primary" id="encode"> Encriptar </button><button class="btn btn-primary" id="decode">Desencriptar</button></p>
+    </div>
+
+    <div class="container">
 
       <p class="col-xs-12 col-sm-6">
         <textarea id = "textoOriginal" placeholder="Escribe tu Mensaje" rows="8" cols="80"></textarea>
@@ -26,11 +30,11 @@
         <textarea id = "solucion" rows="8" cols="80"></textarea>
       </p>
     </div>
+
     <button class="btn btn-danger" id="ayuda"> Ayuda ? </button>
     <p id="mensaje">
       <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">  Cifrado Cesar  </a>
     </p>
-</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     <script src="bootstrap/js/bootstrap.min"></script>
